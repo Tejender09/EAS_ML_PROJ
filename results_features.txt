@@ -1,0 +1,48 @@
+﻿Dataset loaded successfully.
+Training set shape: (1176, 30)
+Test set shape: (294, 30)
+
+--- Logistic Regression (Baseline) Performance ---
+              precision    recall  f1-score   support
+
+           0       0.94      0.75      0.84       247
+           1       0.37      0.77      0.50        47
+
+    accuracy                           0.75       294
+   macro avg       0.66      0.76      0.67       294
+weighted avg       0.85      0.75      0.78       294
+
+Precision: 0.3673
+Recall:    0.7660
+F1-Score:  0.4966
+ROC-AUC:   0.8072
+
+--- Random Forest (Main) Performance ---
+              precision    recall  f1-score   support
+
+           0       0.85      0.98      0.91       247
+           1       0.44      0.09      0.14        47
+
+    accuracy                           0.84       294
+   macro avg       0.65      0.53      0.53       294
+weighted avg       0.78      0.84      0.79       294
+
+Precision: 0.4444
+Recall:    0.0851
+F1-Score:  0.1429
+ROC-AUC:   0.7575
+
+--- Top 10 Key Features (Random Forest) ---
+1. MonthlyIncome: 0.0755
+2. Age: 0.0744
+3. TotalWorkingYears: 0.0590
+4. DailyRate: 0.0567
+5. MonthlyRate: 0.0517
+6. YearsAtCompany: 0.0478
+7. DistanceFromHome: 0.0463
+8. HourlyRate: 0.0455
+9. OverTime: 0.0444
+10. NumCompaniesWorked: 0.0405
+
+Generating SHAP Summary Plot...
+SHAP summary plot saved as 'shap_summary_plot.png'.

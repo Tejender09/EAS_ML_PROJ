@@ -1,0 +1,44 @@
+=== ATTRITION MODEL FEATURE IMPACT REPORT ===
+
+1. GLOBAL FEATURE IMPORTANCE (Random Forest)
+This score represents how often a feature is used to make a key decision in the decision trees.
+------------------------------------------------------------
+Rank  | Feature                        | Importance Score
+------------------------------------------------------------
+16    | MonthlyIncome                  | 0.0812
+1     | Age                            | 0.0709
+24    | TotalWorkingYears              | 0.0622
+19    | OverTime                       | 0.0619
+3     | DailyRate                      | 0.0549
+27    | YearsAtCompany                 | 0.0523
+17    | MonthlyRate                    | 0.0452
+30    | YearsWithCurrManager           | 0.0439
+5     | DistanceFromHome               | 0.0436
+23    | StockOptionLevel               | 0.0423
+18    | NumCompaniesWorked             | 0.0404
+10    | HourlyRate                     | 0.0395
+13    | JobRole                        | 0.0380
+8     | EnvironmentSatisfaction        | 0.0302
+20    | PercentSalaryHike              | 0.0298
+28    | YearsInCurrentRole             | 0.0287
+14    | JobSatisfaction                | 0.0264
+12    | JobLevel                       | 0.0261
+15    | MaritalStatus                  | 0.0235
+22    | RelationshipSatisfaction       | 0.0226
+29    | YearsSinceLastPromotion        | 0.0196
+26    | WorkLifeBalance                | 0.0191
+6     | Education                      | 0.0174
+11    | JobInvolvement                 | 0.0163
+7     | EducationField                 | 0.0162
+25    | TrainingTimesLastYear          | 0.0162
+4     | Department                     | 0.0116
+2     | BusinessTravel                 | 0.0098
+9     | Gender                         | 0.0078
+21    | PerformanceRating              | 0.0024
+
+============================================================
+
+2. DIRECTIONAL IMPACT (SHAP Analysis)
+Explains HOW the feature affects the model (e.g., Higher Value -> Higher Risk?).
+Note: This is based on the average impact on the training set.
+

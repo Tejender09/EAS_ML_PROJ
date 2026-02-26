@@ -1,0 +1,66 @@
+# Employee Attrition Model - Feature Importance Report
+=========================================================
+
+This report outlines which employee factors drive the AI's decision-making process, ranked by influence.
+
+## Top 10 Most Influential Factors (The 'Big Drivers')
+These features have the massive impact on whether an employee is flagged as High Risk.
+
+1. **MonthlyIncome** (Impact Score: 0.0812)
+   - *What it means*: Financial stability is often the #1 retainer. Lower income relative to role increases risk.
+
+2. **Age** (Impact Score: 0.0709)
+   - *What it means*: Career stage proxy. Younger employees explore; older employees settle. High predictive power.
+
+3. **TotalWorkingYears** (Impact Score: 0.0622)
+   - *What it means*: Experience level. Senior staff are generally more stable than freshers.
+
+4. **OverTime** (Impact Score: 0.0619)
+   - *What it means*: Burnout indicator. Employees working overtime are significantly more likely to quit.
+
+5. **DailyRate** (Impact Score: 0.0549)
+   - *What it means*: Daily pay rate (similar to HourlyRate/MonthlyIncome).
+
+6. **YearsAtCompany** (Impact Score: 0.0523)
+   - *What it means*: Loyalty/Stability metric. The 'Lifer' effect—longer tenure drastically reduces risk.
+
+7. **MonthlyRate** (Impact Score: 0.0452)
+   - *What it means*: Another monthly pay metric distinct from Income.
+
+8. **YearsWithCurrManager** (Impact Score: 0.0439)
+   - *What it means*: Quantitative metric affecting employee profile.
+
+9. **DistanceFromHome** (Impact Score: 0.0436)
+   - *What it means*: Commute stress. Long commutes correlate with higher attrition.
+
+10. **StockOptionLevel** (Impact Score: 0.0423)
+   - *What it means*: Golden handcuffs. Vesting stock is a powerful retention tool.
+
+
+## Moderate Influencers (The 'Context' Builders)
+These features provide context to the main drivers.
+
+11. NumCompaniesWorked (0.0404)
+12. HourlyRate (0.0395)
+13. JobRole (0.0380)
+14. EnvironmentSatisfaction (0.0302)
+15. PercentSalaryHike (0.0298)
+16. YearsInCurrentRole (0.0287)
+17. JobSatisfaction (0.0264)
+18. JobLevel (0.0261)
+19. MaritalStatus (0.0235)
+20. RelationshipSatisfaction (0.0226)
+
+## Low Impact Features (The 'Noise')
+These factors are rarely the deciding reason for attrition in this specific model.
+
+21. YearsSinceLastPromotion (0.0196)
+22. WorkLifeBalance (0.0191)
+23. Education (0.0174)
+24. JobInvolvement (0.0163)
+25. EducationField (0.0162)
+26. TrainingTimesLastYear (0.0162)
+27. Department (0.0116)
+28. BusinessTravel (0.0098)
+29. Gender (0.0078)
+30. PerformanceRating (0.0024)
